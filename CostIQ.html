@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CostIQ</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+:root{--bg:#F3E8CF;--card:#FAF3E3;--soft:#FDF9EF;--brown:#6B4226;--ink:#3B2A1C;--mut:#8A7560;--line:#E3D3B1;--ok:#4C7A3A;--bad:#A8432E;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:'Vazirmatn',Tahoma,sans-serif;display:flex;flex-direction:column}
+header{padding:12px 16px 4px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:17px;margin:0;color:var(--brown);font-weight:800}
+header small{color:var(--mut);font-size:11px}
+main{flex:1;overflow-y:auto;padding:8px 12px 16px}
+nav{display:flex;background:var(--brown);padding:5px 3px calc(5px + env(safe-area-inset-bottom,0px))}
+nav button{flex:1;background:none;border:0;color:#E8D8B8;font:inherit;font-size:10px;padding:5px 0;display:flex;flex-direction:column;align-items:center;gap:1px;border-radius:10px}
+nav button span{font-size:18px}
+nav button.on{background:#FAF3E3;color:var(--brown);font-weight:800}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px}
+.fh{display:flex;align-items:center;gap:6px;cursor:pointer}
+.tri{color:var(--brown);font-size:14px;width:16px}
+.bt{color:var(--brown);font-size:14px;font-weight:800}
+.fh small{display:block;color:var(--mut);font-size:11px;margin-top:2px;font-weight:400}
+.grid,.g2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.g3{display:grid;grid-template-columns:2fr 1.2fr 1.2fr;gap:6px}
+.g3d{display:grid;grid-template-columns:1fr 1.6fr 1.2fr;gap:6px}
+.g3x{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.stat{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:9px}
+.stat b{display:block;font-size:14px;margin-top:2px}.stat small{color:var(--mut);font-size:11px}
+.pos{color:var(--ok)}.neg{color:var(--bad)}
+.seg{display:flex;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:3px;margin-bottom:10px}
+.seg button{flex:1;border:0;background:none;font:inherit;font-size:12px;padding:8px 2px;border-radius:9px;color:var(--mut)}
+.seg button.on{background:var(--brown);color:#FAF3E3}
+input,select{width:100%;font:inherit;font-size:13px;padding:9px;border:1px solid var(--line);border-radius:10px;background:var(--soft);color:var(--ink);margin-bottom:7px;min-width:0}
+label{font-size:11px;color:var(--mut);display:block;margin-bottom:2px}
+.btn{width:100%;border:0;background:var(--brown);color:#FAF3E3;font:inherit;font-weight:600;padding:11px;border-radius:12px;font-size:13px}
+.btn.alt{background:var(--soft);color:var(--brown);border:1px solid var(--brown)}
+.btn.red{background:var(--soft);color:var(--bad);border:1px solid var(--bad)}
+.btn+.btn{margin-top:8px}
+.g3x .btn{margin:0;padding:9px 2px;font-size:12px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13px}
+.row:last-child{border:0}.row small{color:var(--mut);display:block;font-size:11px}
+.x{border:0;background:none;color:var(--bad);font-size:16px;padding:0 5px}
+.tw{overflow-x:auto;max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:12px;white-space:nowrap}
+th{background:var(--brown);color:#FAF3E3;padding:6px 8px;font-weight:600}
+td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:center}
+td:first-child,th:first-child{text-align:right}
+tfoot td{font-weight:800;background:var(--soft)}
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.prod{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:10px;font:inherit;text-align:center;color:var(--ink)}
+.prod b{display:block;font-size:13px}.prod small{color:var(--mut)}
+.bar{height:6px;background:var(--line);border-radius:4px;margin-top:4px;overflow:hidden}.bar div{height:100%;background:var(--brown)}
+.chart{display:flex;align-items:flex-end;gap:2px;height:110px;border-bottom:1px solid var(--brown);padding-top:4px}
+.chart div{flex:1;background:var(--brown);border-radius:2px 2px 0 0;min-height:1px}
+.empty{text-align:center;color:var(--mut);font-size:13px;padding:14px 0}
+.edit{background:var(--soft);border:1px solid var(--brown);border-radius:12px;padding:10px;margin:6px 0}
+.toast{position:fixed;bottom:84px;left:50%;transform:translateX(-50%);background:var(--ink);color:#FAF3E3;padding:10px 16px;border-radius:20px;font-size:13px;opacity:0;transition:.3s;pointer-events:none;z-index:20}
+.toast.show{opacity:1}
+.dpb{width:100%;text-align:right;font:inherit;font-size:13px;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--soft);color:var(--ink);margin-bottom:7px}
+.pn{color:var(--brown)}
+.lg{width:26px;height:26px;border-radius:6px;vertical-align:middle;margin-left:8px}
+#cal{position:fixed;inset:0;background:rgba(59,42,28,.5);display:none;align-items:center;justify-content:center;z-index:40;padding:16px}
+#cb{background:var(--card);border-radius:16px;padding:14px;width:100%;max-width:340px}
+.ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;color:var(--brown)}
+.ch button{border:1px solid var(--line);background:var(--soft);border-radius:10px;width:38px;height:36px;font-size:18px;color:var(--brown)}
+.cw,.cg{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cw span{font-size:11px;color:var(--mut);padding:4px 0}
+.cg button{border:0;background:var(--soft);border-radius:10px;height:38px;font:inherit;font-size:13px;color:var(--ink);padding:0}
+.cg button.sel{background:var(--brown);color:#fff}.cg button.in{background:var(--line)}.cg button.td{outline:1px solid var(--brown)}
+.cinfo{font-size:12px;color:var(--mut);text-align:center;margin:10px 0}
+#modal{position:fixed;inset:0;background:rgba(59,42,28,.5);display:none;align-items:center;justify-content:center;z-index:30;padding:24px}
+#modal div{background:var(--card);border-radius:16px;padding:18px;width:100%;max-width:320px;text-align:center}
+#modal p{margin:0 0 14px;font-size:14px}
+</style>
+</head>
+<body>
+<header><h1><img class="lg" id="lg" alt="">CostIQ</h1><small id="today"></small></header>
+<main id="app"></main>
+<nav id="nav"></nav>
+<div class="toast" id="toast"></div>
+<div id="cal" onclick="if(event.target===this)closeCal()"><div id="cb"></div></div>
+<div id="modal"><div><p id="mt"></p><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0;background:none"><button class="btn red" onclick="mdl(1)">بله، حذف شود</button><button class="btn alt" onclick="mdl(0)">انصراف</button></div></div></div>
+<script>
+const KEY='sandwich_db_v2';
+let db={shop:'ساندویچی من',mats:[],foods:[],buys:[],sales:[],exps:[]};
+try{const s=localStorage.getItem(KEY);if(s)db=Object.assign(db,JSON.parse(s))}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(db))}catch(e){}};
+const $=s=>document.querySelector(s);
+const fa=n=>Number(n||0).toLocaleString('fa-IR');
+const fy=n=>String(n).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
+const money=n=>fa(Math.round(n))+' تومان';
+const pc=n=>fa(Math.round(n*10)/10)+'٪';
+const iso=d=>{const x=new Date(d);return x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0')};
+const today=()=>iso(new Date());
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),3800)}
+function num(v){return Number(String(v).replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[,٬\s]/g,''))||0}
+const val=id=>{const e=document.getElementById(id);return e?e.value:''};
+const jump=id=>setTimeout(()=>{const e=document.getElementById(id);if(e)e.scrollIntoView({block:'start'})},30);
+/* modal confirm (browser confirm() is blocked in sandbox) */
+let askFn=null;
+function ask(m,f){askFn=f;$('#mt').textContent=m;$('#modal').style.display='flex'}
+function mdl(ok){$('#modal').style.display='none';const f=askFn;askFn=null;if(ok&&f)f()}
+/* ---- Jalali ---- */
+const MN=['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
+function g2j(gy,gm,gd){const t=[0,31,59,90,120,151,181,212,243,273,304,334];let jy=gy>1600?979:0;gy-=gy>1600?1600:621;const g2=gm>2?gy+1:gy;let d=365*gy+Math.floor((g2+3)/4)-Math.floor((g2+99)/100)+Math.floor((g2+399)/400)-80+gd+t[gm-1];jy+=33*Math.floor(d/12053);d%=12053;jy+=4*Math.floor(d/1461);d%=1461;if(d>365){jy+=Math.floor((d-1)/365);d=(d-1)%365}return[jy,d<186?1+Math.floor(d/31):7+Math.floor((d-186)/30),1+(d<186?d%31:(d-186)%30)]}
+function j2g(jy,jm,jd){jy+=1595;let d=-355668+365*jy+Math.floor(jy/33)*8+Math.floor(((jy%33)+3)/4)+jd+(jm<7?(jm-1)*31:(jm-7)*30+186);let gy=400*Math.floor(d/146097);d%=146097;if(d>36524){gy+=100*Math.floor(--d/36524);d%=36524;if(d>=365)d++}gy+=4*Math.floor(d/1461);d%=1461;if(d>365){gy+=Math.floor((d-1)/365);d=(d-1)%365}let gd=d+1;const s=[0,31,((gy%4==0&&gy%100!=0)||gy%400==0)?29:28,31,30,31,30,31,31,30,31,30,31];let gm=0;for(;gm<13&&gd>s[gm];gm++)gd-=s[gm];return[gy,gm,gd]}
+const toJ=s=>{const p=s.split('-').map(Number);return g2j(p[0],p[1],p[2])};
+const fd=s=>{const j=toJ(s);return fy(j[2])+' '+MN[j[1]-1]+' '+fy(j[0])};
+const dim=(y,m)=>{if(m<7)return 31;if(m<12)return 30;const g=j2g(y,12,30),j=g2j(g[0],g[1],g[2]);return j[1]===12&&j[2]===30?30:29};
+const p2=n=>String(n).padStart(2,'0');
+function jp(id,s,oc){return `<button type="button" class="dpb" id="${id}" data-v="${s||today()}" ${oc?`data-oc="${oc}"`:''} onclick="openCal('${id}')">📅 ${fd(s||today())}</button>`}
+const gj=id=>{const e=document.getElementById(id);return e?e.dataset.v:today()};
+let cal=null;
+function openCal(id,range){const v=range?rf:gj(id),j=toJ(v);cal={id,range:!!range,y:j[0],m:j[1],sel:v,a:range?rf:'',b:range?rt:''};drawCal();$('#cal').style.display='flex'}
+function closeCal(){$('#cal').style.display='none';cal=null}
+function calNav(d){cal.m+=d;if(cal.m>12){cal.m=1;cal.y++}if(cal.m<1){cal.m=12;cal.y--}drawCal()}
+function drawCal(){
+  const y=cal.y,m=cal.m,n=dim(y,m),g=j2g(y,m,1),off=(new Date(g[0],g[1]-1,g[2]).getDay()+1)%7;let h='';
+  for(let i=0;i<off;i++)h+='<i></i>';
+  for(let d=1;d<=n;d++){const gg=j2g(y,m,d),s=gg[0]+'-'+p2(gg[1])+'-'+p2(gg[2]);let c='';
+    if(cal.range){if(s===cal.a||s===cal.b)c='sel';else if(cal.a&&cal.b&&s>cal.a&&s<cal.b)c='in'}else if(s===cal.sel)c='sel';
+    if(s===today())c+=' td';h+=`<button type="button" class="${c}" onclick="pickDay('${s}')">${fy(d)}</button>`}
+  $('#cb').innerHTML=`<div class="ch"><button type="button" onclick="calNav(-1)">›</button><b>${MN[m-1]} ${fy(y)}</b><button type="button" onclick="calNav(1)">‹</button></div><div class="cw">${['ش','ی','د','س','چ','پ','ج'].map(x=>`<span>${x}</span>`).join('')}</div><div class="cg">${h}</div>`
+  +(cal.range?`<div class="cinfo">${cal.a?'از '+fd(cal.a):'ابتدا را انتخاب کنید'}${cal.b?' تا '+fd(cal.b):cal.a?' — حالا انتها را انتخاب کنید':''}</div><div class="g2"><button type="button" class="btn" onclick="applyRange()">تایید</button><button type="button" class="btn alt" style="margin:0" onclick="closeCal()">انصراف</button></div>`:`<div class="g2" style="margin-top:10px"><button type="button" class="btn alt" style="margin:0" onclick="pickDay(today())">امروز</button><button type="button" class="btn alt" style="margin:0" onclick="closeCal()">بستن</button></div>`);
+}
+function pickDay(s){
+  if(cal.range){if(!cal.a||cal.b){cal.a=s;cal.b=''}else if(s<cal.a){cal.b=cal.a;cal.a=s}else cal.b=s;drawCal();return}
+  const e=document.getElementById(cal.id);e.dataset.v=s;e.textContent='📅 '+fd(s);const oc=e.dataset.oc;closeCal();if(oc)Function(oc)();
+}
+function applyRange(){if(!cal.a)return toast('ابتدا یک روز را انتخاب کنید');rf=cal.a;rt=cal.b||cal.a;closeCal();render()}
+/* ---- helpers ---- */
+const U={'کیلو':['گرم',1000],'لیتر':['میلی‌لیتر',1000],'عدد':['عدد',1]};
+const sub=m=>U[m.unit]||['',1];
+const M=id=>db.mats.find(m=>m.id===id);
+const unitSel=(cur,att)=>`<select ${att}>${Object.keys(U).map(u=>`<option ${u===cur?'selected':''}>${u}</option>`).join('')}</select>`;
+const matOpts=s=>db.mats.map(m=>`<option value="${m.id}" ${m.id===s?'selected':''}>${esc(m.name)} (${m.unit})</option>`).join('');
+const eb=(e,d)=>`<button class="x pn" onclick="${e}">✎</button><button class="x" onclick="${d}">✕</button>`;
+const st=ev=>'event.stopPropagation();'+ev;
+let col={};
+function box(k,t,body,def=true,ex='',sm=''){const o=col[k]!==undefined?col[k]:def;return `<div class="card"><div class="fh" onclick="tg(this,'${k}')"><span class="tri">${o?'▾':'▸'}</span><div style="flex:1"><span class="bt">${t}</span>${sm?`<small>${sm}</small>`:''}</div>${ex}</div><div class="bd" style="display:${o?'block':'none'};margin-top:10px">${body}</div></div>`}
+function tg(h,k){const b=h.nextElementSibling,o=b.style.display==='none';b.style.display=o?'block':'none';h.querySelector('.tri').textContent=o?'▾':'▸';col[k]=o}
+/* ---- kardex ---- */
+function kdx(m){
+  const r=[{d:'0000',t:'موجودی اولیه',i:+m.init||0,p:+m.price||0}];
+  db.buys.forEach(b=>b.lines.forEach(l=>{if(l.m===m.id)r.push({d:b.date,t:'خرید'+(b.sup?' - '+b.sup:''),i:l.q,p:l.p})}));
+  db.sales.forEach(s=>{const q=s.use&&s.use[m.id];if(q)r.push({d:s.date,t:'مصرف در فروش',o:q})});
+  r.sort((a,b)=>a.d<b.d?-1:a.d>b.d?1:0);
+  let q=0,v=0,lp=+m.price||0,ti=0,to=0,mq=0;
+  r.forEach((x,n)=>{
+    if(x.i!=null){v+=x.i*x.p;q+=x.i;lp=x.p;x.ai=x.i*x.p;if(n>0)ti+=x.i}
+    else{const a=q>0?v/q:lp;x.ao=x.o*a;v-=x.ao;q-=x.o;to+=x.o}
+    x.q=q;x.v=v;if(q<mq)mq=q});
+  return{rows:r,q,v,avg:q>0?v/q:lp,bought:ti,used:to,minq:mq};
+}
+const negMats=ids=>db.mats.filter(m=>(!ids||ids.includes(m.id))&&kdx(m).minq<-1e-6).map(m=>m.name);
+const avg=id=>{const m=M(id);return m?kdx(m).avg:0};
+const foodCost=f=>f.rec.reduce((t,r)=>t+r.q*avg(r.m),0);
+
+/* ---- app shell ---- */
+const tabs=[['mats','📦','مواد اولیه'],['foods','🥪','غذاها'],['sales','🧾','فروش'],['exps','💸','هزینه‌ها'],['rep','📊','گزارش'],['set','⚙️','تنظیمات']];
+let tab='mats',pd={id:'',date:today(),sup:'',lines:[]},plE=-1,mEdit='',kx='',fEdit='',lEdit='',period='day',rf=today(),rt=today();
+let sc=[],sdr={id:'',date:today(),tax:''},xe={id:'',cat:'',amount:'',date:today(),note:''};
+const tj=toJ(today());let emy=tj[0],emm=tj[1];
+function render(){
+  const y=$('#app').scrollTop;
+  $('#today').textContent=db.shop+' · '+fd(today());
+  $('#nav').innerHTML=tabs.map(t=>`<button class="${t[0]===tab?'on':''}" onclick="tab='${t[0]}';render();$('#app').scrollTop=0"><span>${t[1]}</span>${t[2]}</button>`).join('');
+  $('#app').innerHTML=({mats:vMats,foods:vFoods,sales:vSales,exps:vExps,rep:vRep,set:vSet})[tab]();
+  $('#app').scrollTop=y;
+}
+
+/* ---- materials ---- */
+function vMats(){
+  const ks=db.mats.map(m=>({m,k:kdx(m)})),tot=ks.reduce((t,x)=>t+x.k.v,0);
+  if(!kx||!M(kx))kx=db.mats[0]?db.mats[0].id:'';
+  const km=M(kx),kk=km&&kdx(km),pl=plE>=0?pd.lines[plE]:null;
+  return box('m_xl','📥 اکسل',xlBar('mats'),false)
+  +box('m_add','➕ ماده اولیه جدید',`<label>نام</label><input id="mn" placeholder="مثلاً سینه مرغ"><div class="g2"><div><label>واحد</label>${unitSel('کیلو','id="mu"')}</div><div><label>قیمت هر واحد (تومان)</label><input id="mp" inputmode="numeric"></div></div><label>موجودی اولیه (به همان واحد)</label><input id="mi" inputmode="decimal" value="0"><button class="btn" onclick="addMat()">ثبت ماده اولیه</button>`,false)
+  +box('m_list','📦 مواد اولیه',db.mats.map(m=>mEdit===m.id?`<div class="edit"><label>نام</label><input id="en" value="${esc(m.name)}"><div class="g3"><div><label>واحد</label>${unitSel(m.unit,'id="eu"')}</div><div><label>قیمت</label><input id="ep" inputmode="numeric" value="${m.price}"></div><div><label>موجودی اولیه</label><input id="ei" inputmode="decimal" value="${m.init}"></div></div><div class="g2"><button class="btn" onclick="saveM('${m.id}')">ثبت</button><button class="btn alt" style="margin:0" onclick="mEdit='';render()">انصراف</button></div></div>`:`<div class="row"><div><b>${esc(m.name)}</b><small>${m.unit} · قیمت ${money(m.price)} · اولیه ${fa(m.init)}</small></div><span>${eb(`mEdit='${m.id}';render()`,`delMat('${m.id}')`)}</span></div>`).join('')||'<div class="empty">ماده‌ای ثبت نشده</div>')
+  +box('m_buy',pd.id?'🧾 ویرایش فاکتور خرید':'🧾 فاکتور خرید',`<div id="pform"></div><label>تاریخ</label>${jp('pdt',pd.date)}<label style="margin-top:7px">فروشنده</label><input id="psp" value="${esc(pd.sup)}">
+  ${db.mats.length?`<div class="g3"><div><label>ماده</label><select id="pm">${matOpts(pl&&pl.m)}</select></div><div><label>مقدار</label><input id="pq" inputmode="decimal" value="${pl?pl.q:''}"></div><div><label>قیمت واحد</label><input id="pp" inputmode="numeric" value="${pl?pl.p:''}"></div></div><button class="btn alt" onclick="addLine()">${plE>=0?'ثبت ویرایش ردیف':'+ افزودن به فاکتور'}</button>`:'<div class="empty">اول مواد اولیه را اضافه کنید</div>'}
+  ${pd.lines.map((l,i)=>`<div class="row"><span>${esc((M(l.m)||{name:'؟'}).name)} × ${fa(l.q)}<small>${money(l.p)}</small></span><span>${money(l.q*l.p)}${eb(`readHead();plE=${i};render()`,`readHead();pd.lines.splice(${i},1);plE=-1;render()`)}</span></div>`).join('')}
+  ${pd.lines.length?`<button class="btn" style="margin-top:8px" onclick="regBuy()">${pd.id?'ثبت ویرایش فاکتور':'ثبت فاکتور'} · ${money(pd.lines.reduce((t,l)=>t+l.q*l.p,0))}</button>`:''}
+  ${pd.id?`<button class="btn alt" onclick="pd={id:'',date:today(),sup:'',lines:[]};plE=-1;render()">انصراف از ویرایش</button>`:''}
+  ${db.buys.length?`<div class="bt" style="margin:14px 0 4px">فاکتورهای خرید ثبت‌شده</div>${db.buys.slice().reverse().slice(0,15).map(b=>`<div class="row"><div>${fd(b.date)} ${esc(b.sup)}<small>${b.lines.map(l=>esc((M(l.m)||{name:'؟'}).name)).join('، ')}</small></div><span>${money(b.lines.reduce((t,l)=>t+l.q*l.p,0))}${eb(`editBuy('${b.id}')`,`delBuy('${b.id}')`)}</span></div>`).join('')}`:''}`,false)
+  +box('m_stock','📋 جدول موجودی',db.mats.length?`<div class="tw"><table><tr><th>ماده</th><th>اولیه</th><th>خرید</th><th>مصرف</th><th>موجودی</th><th>ارزش</th></tr>${ks.map(({m,k})=>`<tr><td>${esc(m.name)} <small>(${m.unit})</small></td><td>${fa(m.init)}</td><td>${fa(k.bought)}</td><td>${fa(k.used)}</td><td class="${k.q<0?'neg':''}"><b>${fa(k.q)}</b></td><td>${fa(Math.round(k.v))}</td></tr>`).join('')}<tfoot><tr><td colspan="5">ارزش کل موجودی (تومان)</td><td>${fa(Math.round(tot))}</td></tr></tfoot></table></div>`:'<div class="empty">—</div>',false)
+  +box('m_kx','📒 کاردکس کالا',km?`<select onchange="kx=this.value;render()">${db.mats.map(m=>`<option value="${m.id}" ${m.id===kx?'selected':''}>${esc(m.name)}</option>`).join('')}</select><div class="tw"><table><tr><th>تاریخ</th><th>شرح</th><th>ورود</th><th>خروج</th><th>مانده</th><th>مبلغ ورود</th><th>مبلغ خروج</th><th>ارزش مانده</th></tr>${kk.rows.map(x=>`<tr><td>${x.d==='0000'?'—':fd(x.d)}</td><td>${esc(x.t)}</td><td>${x.i!=null?fa(x.i):''}</td><td>${x.o?fa(x.o):''}</td><td>${fa(x.q)}</td><td>${x.ai?fa(Math.round(x.ai)):''}</td><td>${x.ao?fa(Math.round(x.ao)):''}</td><td>${fa(Math.round(x.v))}</td></tr>`).join('')}</table></div><div class="row"><span>مانده: ${fa(kk.q)} ${km.unit}</span><b>${money(kk.v)}</b></div>`:'<div class="empty">—</div>',false);
+}
+function addMat(){const n=val('mn').trim();if(!n)return toast('نام را وارد کنید');db.mats.push({id:uid(),name:n,unit:val('mu'),price:num(val('mp')),init:num(val('mi'))});save();toast('ثبت شد ✓');render()}
+function saveM(id){const m=M(id),n=val('en').trim();if(!n)return toast('نام را وارد کنید');const o0={...m};Object.assign(m,{name:n,unit:val('eu'),price:num(val('ep')),init:num(val('ei'))});if(negMats([id]).length){Object.assign(m,o0);return toast('با این مقدار موجودی منفی می‌شود')}mEdit='';save();toast('ویرایش ثبت شد ✓');render()}
+function delMat(id){if(db.foods.some(f=>f.rec.some(r=>r.m===id))||db.buys.some(b=>b.lines.some(l=>l.m===id)))return toast('این ماده در رسپی یا فاکتور خرید استفاده شده');ask('این ماده اولیه حذف شود؟',()=>{db.mats=db.mats.filter(m=>m.id!==id);save();render()})}
+function readHead(){if($('#pdt')){pd.date=gj('pdt');pd.sup=val('psp')}}
+function addLine(){readHead();const q=num(val('pq')),p=num(val('pp'));if(!q||!p)return toast('مقدار و قیمت را وارد کنید');const l={m:val('pm'),q,p};if(plE>=0)pd.lines[plE]=l;else pd.lines.push(l);plE=-1;render()}
+function regBuy(){readHead();if(!pd.lines.length)return;const b={id:pd.id||uid(),date:pd.date,sup:pd.sup,lines:pd.lines},i=db.buys.findIndex(x=>x.id===b.id);const oldB=db.buys.slice();if(i>=0)db.buys[i]=b;else db.buys.push(b);const bad=i>=0?negMats():[];if(bad.length){db.buys=oldB;return toast('با این ویرایش موجودی منفی می‌شود: '+bad.join('، '))}pd={id:'',date:today(),sup:'',lines:[]};plE=-1;save();toast('فاکتور ثبت شد ✓');render()}
+function editBuy(id){const b=db.buys.find(x=>x.id===id);pd={id,date:b.date,sup:b.sup||'',lines:b.lines.map(l=>({...l}))};plE=-1;col.m_buy=true;render();jump('pform')}
+function delBuy(id){ask('این فاکتور خرید حذف شود؟ موجودی اصلاح می‌شود.',()=>{const oldB=db.buys;db.buys=oldB.filter(b=>b.id!==id);const bad=negMats();if(bad.length){db.buys=oldB;return toast('حذف ممکن نیست، موجودی منفی می‌شود: '+bad.join('، '))}if(pd.id===id)pd={id:'',date:today(),sup:'',lines:[]};save();render()})}
+
+/* ---- foods ---- */
+function vFoods(){
+  return box('f_xl','📥 اکسل',xlBar('foods'),false)
+  +box('f_add','➕ غذای جدید',`<div class="g2"><div><label>نام</label><input id="fnm"></div><div><label>قیمت فروش</label><input id="fpr" inputmode="numeric"></div></div><button class="btn" onclick="addFood()">ثبت غذا</button>`,false)
+  +(db.foods.length?'':'<div class="empty">غذایی ثبت نشده</div>')
+  +db.foods.map(f=>{const c=foodCost(f),pr=f.price-c;
+  return box('f_'+f.id,esc(f.name),`${fEdit===f.id?`<div class="edit"><div class="g2"><div><label>نام</label><input id="fen" value="${esc(f.name)}"></div><div><label>قیمت فروش</label><input id="fep" inputmode="numeric" value="${f.price}"></div></div><div class="g2"><button class="btn" onclick="saveF('${f.id}')">ثبت</button><button class="btn alt" style="margin:0" onclick="fEdit='';render()">انصراف</button></div></div>`:''}
+  <label>رسپی</label>${f.rec.map((r,i)=>{const m=M(r.m);if(!m)return'';const s=sub(m),k=f.id+':'+i;return lEdit===k?`<div class="edit"><b>${esc(m.name)}</b><div class="g2" style="margin-top:6px"><input id="le" inputmode="decimal" value="${+(r.q*s[1]).toFixed(3)}" placeholder="${s[0]}"><small style="align-self:center">${s[0]}</small></div><div class="g2"><button class="btn" onclick="saveL('${f.id}',${i})">ثبت</button><button class="btn alt" style="margin:0" onclick="lEdit='';render()">انصراف</button></div></div>`:`<div class="row"><span style="flex:1">${esc(m.name)}<small>${fa(+(r.q*s[1]).toFixed(3))} ${s[0]} · ${money(r.q*avg(r.m))}</small></span>${eb(`lEdit='${k}';render()`,`delR('${f.id}',${i})`)}</div>`}).join('')||'<div class="empty">ماده‌ای در رسپی نیست</div>'}
+  ${db.mats.length?`<div class="g2" style="margin-top:8px"><select id="ai_${f.id}">${matOpts()}</select><input id="aq_${f.id}" inputmode="decimal" placeholder="مقدار (گرم / میلی‌لیتر / عدد)"></div><button class="btn alt" onclick="addR('${f.id}')">ثبت در رسپی</button>`:''}
+  <div class="grid" style="margin-top:10px"><div class="stat"><small>هزینه هر پرس</small><b>${money(c)}</b></div><div class="stat"><small>درصد هزینه</small><b>${f.price?pc(c/f.price*100):'—'}</b></div><div class="stat"><small>سود هر پرس</small><b class="${pr>=0?'pos':'neg'}">${money(pr)}</b></div><div class="stat"><small>درصد سود</small><b>${f.price?pc(pr/f.price*100):'—'}</b></div></div>`,false,
+  `<button class="x pn" onclick="${st(`fEdit='${f.id}';col['f_${f.id}']=true;render()`)}">✎</button><button class="x" onclick="${st(`delF('${f.id}')`)}">✕</button>`,
+  `قیمت ${money(f.price)} · هزینه ${money(c)} · درصد سود ${f.price?pc(pr/f.price*100):'—'}`)}).join('');
+}
+function addFood(){const n=val('fnm').trim();if(!n)return toast('نام را وارد کنید');const id=uid();db.foods.push({id,name:n,price:num(val('fpr')),rec:[]});col['f_'+id]=true;save();toast('ثبت شد ✓');render()}
+function saveF(id){const f=db.foods.find(x=>x.id===id),n=val('fen').trim();if(!n)return toast('نام را وارد کنید');f.name=n;f.price=num(val('fep'));fEdit='';save();toast('ویرایش ثبت شد ✓');render()}
+function addR(fid){const f=db.foods.find(x=>x.id===fid),m=M(val('ai_'+fid)),q=num(val('aq_'+fid));if(!m||!q)return toast('مقدار را وارد کنید');const e=f.rec.find(r=>r.m===m.id);if(e)e.q+=q/sub(m)[1];else f.rec.push({m:m.id,q:q/sub(m)[1]});save();toast('ثبت شد ✓');render()}
+function saveL(fid,i){const f=db.foods.find(x=>x.id===fid);f.rec[i].q=num(val('le'))/sub(M(f.rec[i].m))[1];lEdit='';save();toast('ویرایش ثبت شد ✓');render()}
+function delR(fid,i){ask('این ماده از رسپی حذف شود؟',()=>{db.foods.find(x=>x.id===fid).rec.splice(i,1);save();render()})}
+function delF(id){ask('این غذا حذف شود؟',()=>{db.foods=db.foods.filter(f=>f.id!==id);sc=sc.filter(i=>i.fid!==id);save();render()})}
+
+/* ---- sales ---- */
+function readSH(){if($('#sdt')){sdr.date=gj('sdt');sdr.tax=val('stx')}}
+function addC(id){readSH();const f=db.foods.find(x=>x.id===id),e=sc.find(i=>i.fid===id);if(e)e.q++;else{const u={};f.rec.forEach(r=>u[r.m]=r.q);sc.push({fid:id,n:f.name,q:1,p:f.price,c:foodCost(f),u})}render()}
+function qc(i,d){readSH();sc[i].q+=d;if(sc[i].q<=0)sc.splice(i,1);render()}
+function vSales(){
+  const tot=sc.reduce((t,i)=>t+i.q*i.p,0),rec=db.sales.slice().sort((a,b)=>b.date.localeCompare(a.date)).slice(0,15);
+  return box('s_new',sdr.id?'🧾 ویرایش فاکتور فروش':'🧾 فاکتور فروش جدید',`<div id="sform"></div>${db.foods.length?`<div class="prods">${db.foods.map(f=>`<button class="prod" onclick="addC('${f.id}')"><b>${esc(f.name)}</b><small>${money(f.price)}</small></button>`).join('')}</div>`:'<div class="empty">اول از تب «غذاها» غذا اضافه کنید</div>'}
+  ${sc.map((i,n)=>`<div class="row"><span>${esc(i.n)}<small>${money(i.p)}</small></span><span><button class="x" style="color:var(--brown)" onclick="qc(${n},-1)">−</button><b>${fa(i.q)}</b><button class="x" style="color:var(--brown)" onclick="qc(${n},1)">+</button> ${money(i.q*i.p)}<button class="x" onclick="readSH();sc.splice(${n},1);render()">✕</button></span></div>`).join('')}
+  ${sc.length?`<label style="margin-top:8px">تاریخ</label>${jp('sdt',sdr.date)}<label style="margin-top:7px">مبلغ مالیات این فاکتور (تومان، اختیاری)</label><input id="stx" inputmode="numeric" value="${sdr.tax}"><button class="btn" onclick="regSale()">${sdr.id?'ثبت ویرایش فاکتور':'ثبت فاکتور'} · ${money(tot)}</button>`:''}
+  ${sdr.id?`<button class="btn alt" onclick="sc=[];sdr={id:'',date:today(),tax:''};render()">انصراف از ویرایش</button>`:''}`)
+  +box('s_list','فاکتورهای فروش اخیر',rec.map(s=>`<div class="row"><div>${fd(s.date)}<small>${s.items.map(i=>esc(i.n)+' ×'+fa(i.q)).join('، ')}${s.tax?' · مالیات '+money(s.tax):''}</small></div><span>${money(s.total)}${eb(`editSale('${s.id}')`,`delSale('${s.id}')`)}</span></div>`).join('')||'<div class="empty">فروشی ثبت نشده</div>');
+}
+function regSale(){
+  readSH();if(!sc.length)return;
+  const use={};let cost=0;sc.forEach(i=>{cost+=i.c*i.q;for(const m in i.u)use[m]=(use[m]||0)+i.u[m]*i.q});
+  const s={id:sdr.id||uid(),date:sdr.date,items:sc.map(i=>({n:i.n,q:i.q,p:i.p,c:i.c,u:i.u})),use,cost,tax:num(sdr.tax),total:sc.reduce((t,i)=>t+i.q*i.p,0)},k=db.sales.findIndex(x=>x.id===s.id);
+  const oldS=db.sales;db.sales=k>=0?oldS.map(x=>x.id===s.id?s:x):[...oldS,s];const bad=negMats(Object.keys(use));if(bad.length){db.sales=oldS;return toast('موجودی کافی نیست: '+bad.join('، '))}
+  sc=[];sdr={id:'',date:today(),tax:''};save();toast('فاکتور ثبت و موجودی به‌روز شد ✓');render();
+}
+function editSale(id){const s=db.sales.find(x=>x.id===id);sdr={id,date:s.date,tax:s.tax||''};sc=s.items.map(i=>{let u=i.u;if(!u){const f=db.foods.find(x=>x.name===i.n);u={};if(f)f.rec.forEach(r=>u[r.m]=r.q)}return{fid:(db.foods.find(x=>x.name===i.n)||{}).id,n:i.n,q:i.q,p:i.p,c:i.c||0,u}});col.s_new=true;render();jump('sform')}
+function delSale(id){ask('این فاکتور فروش حذف شود؟ موجودی برگردانده می‌شود.',()=>{db.sales=db.sales.filter(s=>s.id!==id);if(sdr.id===id){sc=[];sdr={id:'',date:today(),tax:''}}save();render()})}
+
+/* ---- expenses ---- */
+function vExps(){
+  const L=db.exps.filter(e=>{const j=toJ(e.date);return j[0]===emy&&j[1]===emm}).sort((a,b)=>b.date.localeCompare(a.date)),by={};L.forEach(e=>by[e.cat]=(by[e.cat]||0)+e.amount);
+  const cats=[...new Set(['برق','آب','گاز','حقوق کارکنان','اجاره','اینترنت و تلفن',...db.exps.map(e=>e.cat)])],cy=tj[0];let ys='';for(let y=cy-6;y<=cy+1;y++)ys+=`<option value="${y}" ${y===emy?'selected':''}>${fy(y)}</option>`;
+  return box('e_new',xe.id?'✏️ ویرایش هزینه':'➕ هزینه جدید',`<div id="eform"></div><datalist id="cl">${cats.map(c=>`<option value="${esc(c)}">`).join('')}</datalist>
+  <div class="g2"><div><label>دسته (انتخاب یا تایپ)</label><input id="ec" list="cl" value="${esc(xe.cat)}" placeholder="برق، آب، گاز..."></div><div><label>مبلغ (تومان)</label><input id="ea" inputmode="numeric" value="${xe.amount}"></div></div>
+  <label>تاریخ</label>${jp('edt',xe.date)}<label style="margin-top:7px">توضیح</label><input id="en2" value="${esc(xe.note)}"><button class="btn" onclick="saveExp()">${xe.id?'ثبت ویرایش':'ثبت هزینه'}</button>${xe.id?`<button class="btn alt" onclick="xe={id:'',cat:'',amount:'',date:today(),note:''};render()">انصراف از ویرایش</button>`:''}`)
+  +box('e_sum','جمع هزینه‌های ماه',`<div class="g2"><select onchange="emm=+this.value;render()">${MN.map((n,i)=>`<option value="${i+1}" ${i+1===emm?'selected':''}>${n}</option>`).join('')}</select><select onchange="emy=+this.value;render()">${ys}</select></div>
+  <div class="stat" style="margin-bottom:8px"><small>جمع هزینه این ماه</small><b class="neg">${money(L.reduce((t,e)=>t+e.amount,0))}</b></div>${Object.entries(by).sort((a,b)=>b[1]-a[1]).map(([c,a])=>`<div class="row"><b>${esc(c)}</b><b>${money(a)}</b></div>`).join('')}`)
+  +box('e_list','ریز هزینه‌ها',L.map(e=>`<div class="row"><div>${esc(e.cat)}<small>${fd(e.date)} ${esc(e.note)}</small></div><span>${money(e.amount)}${eb(`editExp('${e.id}')`,`delExp('${e.id}')`)}</span></div>`).join('')||'<div class="empty">هزینه‌ای در این ماه ثبت نشده</div>');
+}
+function saveExp(){const c=val('ec').trim(),a=num(val('ea'));if(!c||!a)return toast('دسته و مبلغ را وارد کنید');const e={id:xe.id||uid(),cat:c,amount:a,date:gj('edt'),note:val('en2')},i=db.exps.findIndex(x=>x.id===e.id);if(i>=0)db.exps[i]=e;else db.exps.push(e);xe={id:'',cat:'',amount:'',date:today(),note:''};save();toast('ثبت شد ✓');render()}
+function editExp(id){const e=db.exps.find(x=>x.id===id);xe={...e};col.e_new=true;render();jump('eform')}
+function delExp(id){ask('این هزینه حذف شود؟',()=>{db.exps=db.exps.filter(e=>e.id!==id);save();render()})}
+
+/* ---- reports ---- */
+function vRep(){
+  let a=today(),b=today();
+  if(period==='week'){const s=new Date();s.setDate(s.getDate()-6);a=iso(s)}
+  if(period==='month'){const s=new Date();s.setDate(s.getDate()-29);a=iso(s)}
+  if(period==='range'){a=rf;b=rt}
+  const S=db.sales.filter(s=>s.date>=a&&s.date<=b),E=db.exps.filter(e=>e.date>=a&&e.date<=b);
+  const inc=S.reduce((t,s)=>t+s.total,0),cg=S.reduce((t,s)=>t+(s.cost||0),0),ex=E.reduce((t,e)=>t+e.amount,0),tax=S.reduce((t,s)=>t+(s.tax||0),0),net=inc-cg-ex-tax;
+  const m={};S.forEach(s=>s.items.forEach(i=>{m[i.n]=m[i.n]||{q:0,t:0};m[i.n].q+=i.q;m[i.n].t+=i.q*i.p}));
+  const top=Object.entries(m).sort((x,y)=>y[1].q-x[1].q).slice(0,10),mx=top.length?top[0][1].q:1;
+  const days=[];for(let i=29;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);days.push(iso(d))}
+  const dv=days.map(d=>db.sales.filter(s=>s.date===d).reduce((t,s)=>t+s.total,0)),dm=Math.max(...dv,1),w=db.mats.reduce((t,x)=>t+kdx(x).v,0);
+  return `<div class="seg">${[['day','روزانه'],['week','هفتگی'],['month','ماهانه'],['range','بازه تاریخی']].map(p=>`<button class="${period===p[0]?'on':''}" onclick="period='${p[0]}';render()">${p[1]}</button>`).join('')}</div>
+  ${period==='range'?`<div class="card"><label>بازه تاریخی: ابتدا و انتها را در تقویم انتخاب کنید</label><button type="button" class="dpb" style="margin:0" onclick="openCal('rg',1)">📅 از ${fd(rf)} تا ${fd(rt)}</button></div>`:''}`
+  +box('r_sum','خلاصه',`<div class="grid"><div class="stat"><small>درآمد</small><b class="pos">${money(inc)}</b></div><div class="stat"><small>تعداد سفارشات</small><b>${fa(S.length)}</b></div><div class="stat"><small>هزینه مواد مصرفی</small><b class="neg">${money(cg)}</b></div><div class="stat"><small>هزینه‌های جاری</small><b class="neg">${money(ex)}</b></div><div class="stat"><small>مالیات</small><b class="neg">${money(tax)}</b></div><div class="stat"><small>سود خالص</small><b class="${net>=0?'pos':'neg'}">${money(net)}</b></div><div class="stat"><small>درصد سود کلی</small><b class="${net>=0?'pos':'neg'}">${inc?pc(net/inc*100):'—'}</b></div><div class="stat"><small>ارزش موجودی انبار</small><b>${money(w)}</b></div></div>`)
+  +box('r_chart','📈 فروش ۳۰ روز اخیر',`<div class="chart">${dv.map(v=>`<div style="height:${v/dm*100}%"></div>`).join('')}</div><div class="row" style="border:0;font-size:11px;color:var(--mut)"><span>${fd(days[0])}</span><span>بیشترین: ${money(dm>1?dm:0)}</span><span>امروز</span></div>`)
+  +box('r_top','🏆 ۱۰ غذای پرفروش',top.map((t,i)=>`<div style="margin-bottom:9px"><div class="row" style="border:0;padding:0"><span>${fa(i+1)}. ${esc(t[0])}</span><span>${fa(t[1].q)} عدد · ${money(t[1].t)}</span></div><div class="bar"><div style="width:${t[1].q/mx*100}%"></div></div></div>`).join('')||'<div class="empty">فروشی در این بازه نیست</div>');
+}
+
+/* ---- settings ---- */
+function vSet(){
+  return box('t_info','مشخصات',`<label>نام مغازه</label><input id="sn" value="${esc(db.shop)}"><button class="btn" onclick="db.shop=val('sn').trim()||db.shop;save();toast('ذخیره شد ✓');render()">ثبت نام مغازه</button>`)
+  +box('t_bk','پشتیبان‌گیری',`<div style="font-size:12px;color:var(--mut);margin-bottom:10px">فایل پشتیبان با تاریخ امروز دانلود می‌شود. اطلاعات فقط روی همین دستگاه ذخیره است؛ مرتب بکاپ بگیرید.</div><button class="btn" onclick="backup()">⬇️ دریافت فایل پشتیبان</button><button class="btn alt" onclick="$('#rfile').click()">⬆️ بازیابی از فایل پشتیبان</button><input type="file" id="rfile" accept=".json,application/json" style="display:none" onchange="restore(this.files[0]);this.value=''">`)
+  +`<button class="btn red" onclick="wipe()">حذف همه اطلاعات</button>`;
+}
+async function dl(name,data,type){
+  try{const d=window.claude&&await claude.use('downloads');if(d){await d.save({filename:name,data});toast('فایل آماده ذخیره شد ✓');return}}catch(e){if(e&&e.code==='declined')return}
+  try{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type}));a.download=name;document.body.appendChild(a);a.click();a.remove();toast('فایل ساخته شد ✓')}catch(e){toast('دانلود ممکن نشد')}
+}
+function backup(){const [y,m,d]=today().split('-');dl('backup-'+today()+'.json',JSON.stringify({app:'sandwich-accounting',version:3,exported:new Date().toISOString(),...db},null,2),'application/json')}
+function restore(f){
+  if(!f)return;const r=new FileReader();
+  r.onload=()=>{try{const j=JSON.parse(r.result);if(!Array.isArray(j.mats)||!Array.isArray(j.foods)||!Array.isArray(j.sales))throw 0;
+    ask('اطلاعات فعلی با فایل پشتیبان جایگزین شود؟',()=>{db={shop:j.shop||'ساندویچی من',mats:j.mats,foods:j.foods,buys:j.buys||[],sales:j.sales,exps:j.exps||[]};save();toast('بازیابی شد ✓');render()})}catch(e){toast('فایل پشتیبان معتبر نیست')}};
+  r.readAsText(f);
+}
+function wipe(){ask('همه اطلاعات پاک شود؟ این کار برگشت ندارد.',()=>{db={shop:db.shop,mats:[],foods:[],buys:[],sales:[],exps:[]};save();render()})}
+
+/* ---- Excel ---- */
+const xlBar=t=>`<div class="g3x"><button class="btn alt" onclick="xlT('${t}')">قالب اکسل</button><button class="btn alt" onclick="$('#xi_${t}').click()">ایمپورت اکسل</button><button class="btn" onclick="xlE('${t}')">اکسپورت اکسل</button></div><input type="file" id="xi_${t}" accept=".xlsx,.xls" style="display:none" onchange="xlI('${t}',this.files[0]);this.value=''"><div style="font-size:11px;color:var(--mut);margin-top:8px">ایمپورت: ردیف‌های هم‌نام به‌روزرسانی و ردیف‌های جدید اضافه می‌شوند.</div>`;
+const H={mats:['نام','واحد','قیمت هر واحد','موجودی اولیه'],foods:['نام غذا','قیمت فروش','ماده اولیه','مقدار (گرم / میلی‌لیتر / عدد)']};
+function matRows(){return db.mats.map(m=>({[H.mats[0]]:m.name,[H.mats[1]]:m.unit,[H.mats[2]]:m.price,[H.mats[3]]:m.init}))}
+function foodRows(){const r=[];db.foods.forEach(f=>{if(!f.rec.length)r.push({[H.foods[0]]:f.name,[H.foods[1]]:f.price,[H.foods[2]]:'',[H.foods[3]]:''});f.rec.forEach(x=>{const m=M(x.m);if(m)r.push({[H.foods[0]]:f.name,[H.foods[1]]:f.price,[H.foods[2]]:m.name,[H.foods[3]]:+(x.q*sub(m)[1]).toFixed(3)})})});return r}
+async function xlW(name,sheet,rows,hdr){
+  if(!window.XLSX)return toast('کتابخانه اکسل بارگذاری نشد');
+  const ws=XLSX.utils.json_to_sheet(rows,{header:hdr}),wb=XLSX.utils.book_new();ws['!cols']=hdr.map(()=>({wch:22}));XLSX.utils.book_append_sheet(wb,ws,sheet);
+  await dl(name,new Uint8Array(XLSX.write(wb,{type:'array',bookType:'xlsx'})),'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+}
+function xlT(t){
+  const ex=t==='mats'?[{[H.mats[0]]:'سینه مرغ',[H.mats[1]]:'کیلو',[H.mats[2]]:250000,[H.mats[3]]:5},{[H.mats[0]]:'نان ساندویچی',[H.mats[1]]:'عدد',[H.mats[2]]:6000,[H.mats[3]]:50}]:[{[H.foods[0]]:'ساندویچ مرغ',[H.foods[1]]:120000,[H.foods[2]]:'سینه مرغ',[H.foods[3]]:100},{[H.foods[0]]:'ساندویچ مرغ',[H.foods[1]]:120000,[H.foods[2]]:'نان ساندویچی',[H.foods[3]]:1}];
+  xlW(t==='mats'?'قالب-مواد-اولیه.xlsx':'قالب-غذاها.xlsx',t==='mats'?'مواد اولیه':'غذاها',ex,H[t]);
+}
+function xlE(t){t==='mats'?xlW('مواد-اولیه-'+today()+'.xlsx','مواد اولیه',matRows(),H.mats):xlW('غذاها-'+today()+'.xlsx','غذاها',foodRows(),H.foods)}
+function xlI(t,f){
+  if(!f)return;if(!window.XLSX)return toast('کتابخانه اکسل بارگذاری نشد');
+  const r=new FileReader();
+  r.onload=()=>{try{
+    const wb=XLSX.read(new Uint8Array(r.result),{type:'array'}),rows=XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]],{defval:''});
+    const g=(row,k)=>{const key=Object.keys(row).find(x=>String(x).includes(k));return key?row[key]:''};
+    let n=0,bad=[];
+    if(t==='mats'){rows.forEach(w=>{const nm=String(g(w,'نام')).trim();if(!nm)return;let u=String(g(w,'واحد')).trim();if(!U[u])u='کیلو';const o={name:nm,unit:u,price:num(g(w,'قیمت')),init:num(g(w,'موجودی'))},e=db.mats.find(m=>m.name===nm);if(e)Object.assign(e,o);else db.mats.push({id:uid(),...o});n++})}
+    else{const seen={};rows.forEach(w=>{const nm=String(g(w,'نام غذا')).trim();if(!nm)return;let f=db.foods.find(x=>x.name===nm);if(!f){f={id:uid(),name:nm,price:0,rec:[]};db.foods.push(f)}const p=num(g(w,'قیمت'));if(p)f.price=p;const mn=String(g(w,'ماده')).trim();if(!seen[nm]){seen[nm]=1;n++;if(mn)f.rec=[]}if(!mn)return;const m=db.mats.find(x=>x.name===mn),q=num(g(w,'مقدار'));if(!m){if(!bad.includes(mn))bad.push(mn);return}f.rec.push({m:m.id,q:q/sub(m)[1]})})}
+    save();render();toast(fa(n)+' مورد وارد شد ✓'+(bad.length?' · ماده نامعتبر: '+bad.join('، '):''));
+  }catch(e){toast('فایل اکسل معتبر نیست')}};
+  r.readAsArrayBuffer(f);
+}
+{const ic=document.querySelector('link[rel=apple-touch-icon]').href;$('#lg').src=ic;const l=document.createElement('link');l.rel='icon';l.href=ic;document.head.appendChild(l)}
+render();
+</script>
+</body>
+</html>
